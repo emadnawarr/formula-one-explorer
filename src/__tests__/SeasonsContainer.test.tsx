@@ -7,21 +7,16 @@ import { vi } from "vitest";
 // Mock the API
 vi.mock("../services/seasonService");
 
-const mockedSeasons = {
-  total: "2",
-  SeasonTable: {
-    Seasons: [
-      {
-        season: "2023",
-        url: "https://en.wikipedia.org/wiki/2023_Formula_One_World_Championship",
-      },
-      {
-        season: "2022",
-        url: "https://en.wikipedia.org/wiki/2022_Formula_One_World_Championship",
-      },
-    ],
+const mockedSeasons = [
+  {
+    season: "2023",
+    url: "https://en.wikipedia.org/wiki/2023_Formula_One_World_Championship",
   },
-};
+  {
+    season: "2022",
+    url: "https://en.wikipedia.org/wiki/2022_Formula_One_World_Championship",
+  },
+];
 
 describe("SeasonsContainer", () => {
   beforeEach(() => {

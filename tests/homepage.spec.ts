@@ -7,7 +7,7 @@ test("User can navigate to races and see pinned races", async ({
 }) => {
   await page.goto("http://localhost:5173");
 
-  await page.click("text=1953");
+  await page.click("text=2015");
 
   await page.waitForSelector("text=Grand Prix");
 
