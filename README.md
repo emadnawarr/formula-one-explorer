@@ -52,7 +52,13 @@ A React + TypeScript application for exploring Formula 1 seasons, races, and rac
 
 **Should pinned races be removed when selecting a different season?**
 
-* ✅ Yes, if pins are intended to be per-season
-* ❌ No, if you want users to build a cross-season favorite list
+* Yes, if pins are intended to be per-season
+* No, if you want users to build a cross-season favorite list
 
 > This implementation resets pinned races when selecting a new season, treating pins as season-specific.
+
+## Deployment
+
+The project is hosted on Vercel and automatically redeploys on every push to the main branch.
+
+Live URL: https://formula-one-explorer-one.vercel.app/
